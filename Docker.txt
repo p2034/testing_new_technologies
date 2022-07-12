@@ -1,0 +1,9 @@
+// ps - Process Status, print all containers
+docker ps -a
+// run new container in interactive mode (with STDIN)
+docker run -e container name
+// delete all containers which were existed before
+docker rm $(docker ps -a -q -f status=exited)
+
+// how to run docker image in right way for me and for golang
+docker run -p 10001:10001 -i <imagename>
